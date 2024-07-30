@@ -1,0 +1,271 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: inline;
+}
+
+#title, #projects, #contact {
+  background: linear-gradient(300deg, #031874, #2e3eca, #2f5fff);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+.title {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  background-image: -webkit-linear-gradient(125deg, #ff9191, #ff9191, #ff9191);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 15s infinite linear;
+}
+
+.scrlldn-title {
+  margin-bottom: 100px;
+  height: 50px;
+  width: 50px;
+}
+
+nav {
+  background-color: #2b2b2b;
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+nav a {
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.active, nav a:hover{
+  font-weight: bold;
+  color: white;
+}
+
+#resume, #interests {
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: radial-gradient(#2f5fff 0.5px, transparent 0.5px),
+    radial-gradient(#2f5fff 0.75px, #ffffff 0.75px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+.resume{
+  height: 100vh;
+  width: fit-content;
+  justify-content: center;
+  padding: 0 75px;
+}
+
+.exp-card {
+  display: flex;
+}
+
+.resume h1, h6 {
+  color: #2b2b2b;
+}
+
+.resume p,
+li {
+  font-size: 14px;
+}
+
+.resume ul {
+  margin: 0;
+}
+
+.projects {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrlldn-proj {
+  position: absolute;
+  margin: 100px -25px;
+  height: 50px;
+  width: 50px;
+}
+
+.showcase {
+  padding-top: 75px;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase p {
+  font-weight: 400;
+}
+
+.showcase img{
+  width: 850px;
+}
+
+.showcase .card-body {
+  text-align: center;
+}
+
+.interests {
+  height: 100vh;
+  width: fit-content;
+  justify-content: center;
+  padding: 0 75px;
+}
+
+@media screen and (max-width: 768px) {
+  .title h1 {
+    font-size: 32px;
+  }
+
+  .title p {
+    font-size: 16px;
+  }
+
+  .title img {
+    width: 300px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #navbar a {
+    font-size: 16px;
+  }
+
+  .scroll-down-btn {
+    height: 40px;
+    width: 40px;
+  }
+
+  .resume {
+    height: fit-content;
+  }
+
+  .resume h6 {
+    font-size: 15px;
+  }
+
+  .resume p, li {
+    font-size: 12px;
+  }
+
+  .exp-card {
+    display: inline;
+  }
+
+  .showcase {
+    padding: 0;
+  }
+
+  .projects h1 {
+    font-size: 32px;
+  }
+
+  .showcase .card {
+    width: 350px;
+  }
+
+  .showcase img {
+    object-fit: scale-down;
+    height: 175px;
+  }
+
+  .showcase .card-body {
+    text-align: start;
+  }
+
+  .showcase h2 {
+    font-size: 20px;
+  }
+
+  .interests {
+    height: fit-content;
+    padding: 75px;
+  }
+
+  .interests h4 {
+    font-size: 18px;
+  }
+
+  .interests .card {
+    width: 250px;
+  }
+
+  .interests img {
+    height: 125px;
+  }
+
+  .interests .interest3 {
+    object-position: 0 53% !important;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  #navbar a {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+}
+
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

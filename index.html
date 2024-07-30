@@ -3,10 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
-<body>
-    
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <!-- Hero -->
+    <header>
+      <section id="title">
+        <div class="container title d-flex flex-column">
+          <img src="./assets/images/graduate-vector.png" alt="graduate-boy" width="550px">
+          <h1 class="display-4 fw-bold text-light">Hi, my name is <span class="name">Rayhaan</span>!</h1>
+          <p class="lead text-light">And i'm a <span style="font-weight: 600;">fresh-graduate</span></p>
+          <a href="#resume">
+            <svg class="scrlldn-title position-absolute bottom-0 start-50 translate-middle-x bi bi-chevron-double-down" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+              <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <nav id="navbar" class="z-1">
+        <ul>
+          <li><a href="#title" class="list">Intro</a></li>
+          <li><a href="#resume" class="list">Resume</a></li>
+          <li><a href="#projects" class="list">Projects</a></li>
+          <li><a href="#interests" class="list">Interests</a></li>
+          <li><a href="#contact" class="list">Contact</a></li>
+      </nav>
+    </header>
+    <!-- Resume -->
+    <section id="resume">
+      <div class="container resume d-flex flex-column py-5">
+        <div class="d-flex pb-2">
+          <h1><b>My Experience</b></h1>
+        </div>
+        <div class="flex-column flex-md-row gap-4 align-items-start justify-content-center exp-card">
+          <div class="list-group">
+            <div class="list-group-item d-flex gap-3 py-3" aria-current="true">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0"><b>JODOUGH 93</b></h6>
+                  <p class="mb-0 opacity-75 pb-2"><i>Graphic Designer</i></p>
+                  <ul>
+                    <li>Designing feeds and instagram stories for social media content.</li>
+                    <li>Create packaging design for certain event.</li>
+                  </ul>
+                </div>
+                <small class="opacity-50 text-nowrap">2023</small>
+              </div>
+            </div>
+            <div class="list-group-item d-flex gap-3 py-3" aria-current="true">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0"><b>Bangkit Academy 2023 by Google, GoTo, Traveloka</b></h6>
+                  <p class="mb-0 opacity-75 pb-2"><i>Mobile Developer Cohort</i></p>
+                  <ul>
+                    <li>Create a UI Design for Mobile Application.</li>
+                    <li>Implement the UI Design from Figma into an Android Studio Project.</li>
+                    <li>Conudct UX research to gain insight into UI design.</li>
+                  </ul>
+                </div>
+                <small class="opacity-50 text-nowrap">2023</small>
+              </div>
+            </div>
+            <div class="list-group-item d-flex gap-3 py-3" aria-current="true">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0"><b>HOLOGY (House of Technology) 5.0</b></h6>
+                  <p class="mb-0 opacity-75 pb-2">Staff of Design, Decoration, and Multimedia Division</p>
+                  <ul>
+                    <li>Create a feeds and instagram stories design for social media content.</li>
+                    <li>Create a certificate design template for committee, participants, and winners of the competition.</li>
+                  </ul>
+                </div>
+                <small class="opacity-50 text-nowrap">2022</small>
+              </div>
+            </div>
+          </div>
+          <div class="list-group">
+            <div class="list-group-item d-flex gap-3 py-3" aria-current="true">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0"><b>Social Connect</b></h6>
+                  <p class="mb-0 opacity-75 pb-2"><i>Graphic Designer Associate</i></p>
+                  <ul>
+                    <li>Designing feeds and instagram stories template design for social media content.</li>
+                    <li>Manage design requests for feeds and instagram stories in commemoration of the celebration of national holidays.</li>
+                    <li>Manage weekly routine design on feeds and instagram storied.</li>
+                    <li>Manage request deseign from content creator division.</li>
+                  </ul>
+                </div>
+                <small class="opacity-50 text-nowrap">2022</small>
+              </div>
+            </div>
+            <div class="list-group-item d-flex gap-3 py-3" aria-current="true">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0"><b>Social Connect</b></h6>
+                  <p class="mb-0 opacity-75 pb-2"><i>Graphic Designer Analyst</i></p>
+                  <ul>
+                    <li>Create a feeds and instagram stories design for social media content.</li>
+                    <li>Create a design fro mental health campaign banner.</li>
+                    <li>Create a template for a video about mental health issues.</li>
+                    <li>Editing videos about mental health issues for sharing on social media.</li>
+                  </ul>
+                </div>
+                <small class="opacity-50 text-nowrap">2021</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container projects d-flex flex-column text-center">
+        <h1 class="display-4 fw-bold text-light">Let's take a look at my projects!</h1>
+        <a href="#showcase">
+          <svg class="scrlldn-proj bi bi-chevron-double-down" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+          </svg>
+        </a>
+      </div>
+      <div id="showcase" class="container showcase d-flex">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-inner">
+            <div class="carousel-indicators py-2">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-item active">
+              <div class="card mb-3 showcase-1 d-flex align-items-center py-3 px-2 rounded-4">
+                <img src="./assets/images/tindog-project.png" class="rounded-3" alt="...">
+                <div class="card-body pb-4">
+                  <h2 class="card-title">TinDog App</h2>
+                  <p class="card-text">Application that help your dogs to find the right partner.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3 showcase-1 d-flex align-items-center py-3 px-2 rounded-4">
+                <img src="./assets/images/mondrian-project.png" class="rounded-3" alt="...">
+                <div class="card-body pb-4">
+                  <h2 class="card-title">Mondrian CSS Project</h2>
+                  <p class="card-text">Have you ever seen the Mondrian Painting? Now in CSS!</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3 showcase-1 d-flex align-items-center py-3 px-2 rounded-4">
+                <img src="./assets/images/online-resume-project.png" class="rounded-3" alt="...">
+                <div class="card-body pb-4">
+                  <h2 class="card-title">Online Resume Project</h2>
+                  <p class="card-text">My curriculum vitae but it is showed on website.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Interests -->
+    <section id="interests" class="text-center">
+      <div class="container interests d-flex flex-column">
+        <h1 class="fw-bold pb-2">My Interest</h1>
+        <div class="album">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./assets/images/interest1.jpg" class="object-fit-cover rounded interest1" height="400px" alt="">
+                  <div class="card-body">
+                    <h4 class="card-text text-start">Mechanical Keyboards</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./assets/images/interest2.jpg" class="object-fit-cover rounded interest2" style="object-position: 0 54%;" height="400px" alt="">
+                  <div class="card-body">
+                    <h4 class="card-text text-start">Photography</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./assets/images/interest3.jpg" class="object-fit-cover rounded interest3" style="object-position: 0 55%;" height="400px" alt="">
+                  <div class="card-body">
+                    <h4 class="card-text text-start">Foods</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container contact vh-100 d-flex justify-content-center align-items-center">
+        <div class="p-5 text-center bg-body-tertiary rounded-3" style="width: 850px;">
+          <h1 class="text-body-emphasis pt-5">Get in touch</h1>
+          <p class="col-lg fs-5 text-center">
+            rayhaanako13@gmail.com
+          </p>
+          <div class="d-inline-flex gap-2 mb-5">
+            <a href="https://www.linkedin.com/in/rayhaaniw1301/">
+              <button class="d-inline-flex align-items-center btn btn-primary rounded-2 p-2" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#ffffff" class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                </svg>
+              </button>
+            </a>
+            <a href="https://www.instagram.com/rayhaaniw13/">
+              <button class="btn btn-outline-secondary rounded-2 p-2" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
